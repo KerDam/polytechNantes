@@ -1,0 +1,11 @@
+import java.awt.*;
+
+public class TransitionDialog extends Dialog {
+
+   public TransitionDialog(Frame parent, transition t)
+
+   public boolean handleEvent(Event e)
+
+   public void setTransition(transition t)
+
+}

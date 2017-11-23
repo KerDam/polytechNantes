@@ -1,0 +1,13 @@
+import java.io.*;
+
+public class SavePetriNet {
+
+    public SavePetriNet()
+
+    public void setFile(String file) throws IOException
+    public void deleteFile() throws IOException
+    public void saveNet(pn PetNet)
+
+}
+
+

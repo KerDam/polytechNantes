@@ -1,0 +1,11 @@
+import java.awt.*;
+
+public class EdgeDialog extends Dialog {
+
+   public EdgeDialog(Frame parent, edge e)
+
+   public boolean handleEvent(Event e)
+
+   public void setEdge(edge e)
+
+}

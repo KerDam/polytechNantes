@@ -1,0 +1,20 @@
+import java.awt.*;
+
+
+public class CPictBar extends Panel
+
+    public CPictBar(Image ups[], Image downs[], Image disabs[],
+                    int tot)
+
+    public void enableAll()
+    public void enable(int i)
+    public void disable(int i)
+
+    public void highlight(int i)
+    public boolean allLoaded()
+
+}
+
+
+
+

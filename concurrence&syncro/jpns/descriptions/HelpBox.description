@@ -1,0 +1,10 @@
+import java.awt.*;
+import java.io.*;
+
+public class HelpBox extends Frame {
+
+    public HelpBox() throws IOException
+
+    public boolean action(Event e, Object what)
+
+}

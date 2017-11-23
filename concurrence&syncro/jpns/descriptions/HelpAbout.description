@@ -1,0 +1,9 @@
+import java.awt.*;
+
+public class HelpAbout extends Frame {
+
+    public HelpAbout(Frame par)
+
+    public boolean action(Event e, Object what)
+
+}

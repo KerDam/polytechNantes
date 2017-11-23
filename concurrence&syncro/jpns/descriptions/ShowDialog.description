@@ -1,0 +1,12 @@
+import java.awt.*;
+
+public class ShowDialog extends Dialog {
+
+   public ShowDialog(Frame parent)
+
+   public void setDelay(int d)
+   public void setDemo(boolean d)
+
+   public boolean handleEvent(Event e)
+
+}

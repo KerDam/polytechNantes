@@ -1,0 +1,44 @@
+import java.awt.*;
+import node;
+import transition;
+import NodeDialog;
+import Editor;
+
+
+class vis extends Canvas {
+
+    public static final int NodeMode;
+    public static final int TransitionMode;
+    public static final int EdgeMode;
+    public static final int MODE_ITEM;
+    public static final int MODE_DELETE;
+    public static final int MODE_DRAG;
+    public static final int MODE_EDIT;
+    public static final int SELECTMODE;
+
+    public static final int COLORMODE_STANDARD;
+    public static final int COLORMODE_BLACKANDWHITE;
+
+    public vis(pn PN, Dimension dim)
+
+    public void setDimension(Dimension d)
+    public int getMode()
+    public boolean setMode(int mode, int autorisation)
+    public int getColorMode()
+    public void setColorMode(int colorMode)
+    public void setPN(pn PN)
+
+    public boolean handleEvent(Event evt)
+
+    public void update(Graphics g)
+    public void paint(Graphics g)
+
+    public node getNodeAtXY(int x, int y, node IgnoreNode)
+    public transition getTransitionAtXY(int x, int y, transition IgnoreTransition)
+    public edge getEdgeAtXY(int x, int y, edge IgnoreEdge)
+
+    public node getClosestNode(int x, int y, node IgnoreNode)
+    public transition getClosestTransition(int x, int y, transition IgnoreTrans)
+    public edge getClosestEdge(int x, int y, edge IgnoreEdge)
+
+}

@@ -1,0 +1,11 @@
+import java.awt.*;
+
+public class NodeDialog extends Dialog {
+
+   public NodeDialog(Frame parent, node n)
+
+   public boolean handleEvent(Event e)
+
+   public void setNode(node n)
+
+}

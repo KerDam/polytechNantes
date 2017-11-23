@@ -1,0 +1,35 @@
+import java.util.*;
+
+
+public class runPN extends Thread {
+
+    static final int PARMAN;
+    static final int PARRAN;
+    static final int SEQMAN;
+    static final int SEQRAN;
+    static final int CODE;
+
+    public runPN(pn pnet, Editor ed, vis vi, int m, boolean sing)
+
+    public void setPN(pn pnet)
+    public void setEditor(Editor ed)
+    public void setVis(vis vi)
+    public void setDemo(boolean d)
+    public void setMode(int m)
+
+    public void enableSingleStep()
+    public void disableSingleStep()
+
+    public void select(transition t)
+
+    public void restoreVisMode()
+    public void holdVisMode()
+
+    public void blink(transition t)
+    public void blink(Vector v)
+
+    public void run()
+
+}
+
+

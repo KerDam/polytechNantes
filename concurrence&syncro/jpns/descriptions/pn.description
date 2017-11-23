@@ -1,0 +1,68 @@
+import java.lang.*;
+import java.util.*;
+import java.awt.*;
+import edge;
+
+public class pn implements Cloneable {
+
+  public pn()
+
+  public void setName(String name)
+
+  public int getIndexOf(node n)
+  public int getIndexOf(transition t)
+  public int getIndexOf(edge e)
+
+  public boolean equal(node n1, node n2)
+  public boolean equal(transition t1, transition t2)
+  public boolean equal(edge e1, edge e2)
+
+  public String getName()
+
+  public int numberOfNodes()
+  public int numberOfTransitions()
+  public int numberOfEdges()
+
+  public node getNode(int i)
+  public transition getTransition(int i)
+  public edge getEdge(int i)
+  public int getTransIndex(transition t)
+  public int getNodeIndex(node n)
+
+  public static int getX(Object o)
+  public static int getY(Object o)
+
+  public void unhighlightAllTransitions()
+
+  public void addNode()
+  public boolean addNode(int x, int y)
+  public boolean addNode(node n)
+  public void addTransition()
+  public boolean addTransition(int x, int y)
+  public boolean addTransition(transition t)
+  public edge addEdge(edge e)
+  public edge addEdge(int tFrom, int iFrom, int tTo, int iTo, Polygon points)
+
+  public String numberToString(int n)
+
+  public void removeNode(node n)
+  public void removeTransition(transition t)
+  public boolean removeEdge(edge e)
+
+  public boolean isDead(boolean priorEnabled)
+
+  public synchronized Object clone()
+
+  public void setStepCount(int s)
+  public int getStepCount()
+
+  public Vector getAllConnectedTrans(transition t)
+  public Vector getAllConnectedFireableTrans(transition t, boolean prior)
+  public boolean connectedWith(node n, transition t)
+  public int getAllWeights(Vector v)
+  public int getConnectedItems(Vector v)
+
+  public static void subVectorOfVector(Vector sub,Vector vec)
+
+}
+

@@ -1,0 +1,219 @@
+HelpFile for PNS - The Petri Net Simulator, Java Version!
+
+
+This is a small summary of the possiiblities PNS gives you.
+For additional information about petri nets, their functions
+and elements please look in secondary literature (best in
+books about graph theory or special petri net workouts).
+
+
+
+Starting...
+
+After unzipping the program archive, you can run it as an applet or as an application.
+As applet:
+    You can use either your favorite, java-enabled WWW-Browser by accessing the
+    JPNS.HTML file or you can use the appletviewer that comes with the JDK with the
+    command "appletviewer jpns.html". You may have to correct the path given in the
+    HTML-file to give access to your installation path.
+    Of course you can write your own Web-page.
+    The only thing you have to do is to adress the JPNSAPPLET.CLASS file in nearly the
+    same way as in the JPNS.HTML file.
+    RESTRICTIONS: As an applet, the program in NOT able to read or write to the
+                  local disk. Therefore YOU CAN NOT LOAD OR SAVE FILES.
+                  This is a restriction of your browser! The appletviewer may
+                  allow some disk access, but it is a whole lot better to run
+                  the program as application...
+
+As application:
+    Type the command "java jpns" in the directory in wich you installed jPNS.
+    Your java interpreter may have some other name (e.g. "javapm" in OS/2), but
+    it is all the same way.
+    Running as an application, the program as its full funtionality!
+
+
+
+THE COMMANDS of PNS are:
+
+    Menu FILE :
+    -----------
+
+        NEW     clears the whole drawing
+        ---
+
+        Load    opens a dialog to load a new petri net from a PNS-File.
+        ----    The drawings so far will be overwritten.
+
+        Save    will save the current drawing into a specified PNS-File.
+        ----    When selected first in a new drawing, it opens a dialog to
+                specifiy the name of the file.
+
+        Save As opens a dialog to save the current drawing into a PNS-File.
+        ------- There will be a security question before overwriting a existing
+                file.
+
+        Quit    quits PNS.
+        ----
+
+
+    Menu SETTINGS :
+    ---------------
+
+        The first two items, wich are "Parallel" and "Sequentiell", specify
+        the mode that is used when running the current petri net. You have
+        the following choices:
+
+        Parallel Random     All transitions fire parallel. When there are two
+        ---------------     transitions that are connected with the same node
+                            and this node has only one token left, the activating
+                            will be chosen by random.
+
+        Parallel Manual     Same as above, but you will be asked wich transition
+        ---------------     to be activated.
+
+        Sequentiell Random  All transitions fire after another. Wich one is chosen
+        ------------------  by random.
+
+        Sequentiell Manual  Same as above, but are in comlete control of the
+        ------------------  firing.
+
+        The other two items in this menu are useful for the graphical output.
+        If "Options" is chosen, a dialog is opened, where you can choose the "Show" option
+        (colorize firing transition during running a petri net) and selct the delay time between each step.
+        The "Painting" item will give you the possibility to chose between a
+        colored output and a black-white one (useful for printing).
+
+
+    Menu HELP :
+    -----------
+
+        About       Brings up a window containing informations about the program.
+        -----
+
+        Commands    Will show you this helpfile.
+        --------
+
+
+Now for the graphical icons:
+
+From left to right, the icons symbolize
+
+        "Release"   -   Deactivate the current draw mode. Here you can move all
+                        components of the petri net with the LEFT MOUSE BUTTON(LMB).
+
+        "Add Node"  -   In this mode you can place nodes with the LEFT MOUSE BUTTON.
+                        The RIGHT MOUSE BUTTON(RMB) is for moving all components.
+
+        "Add Transition     -   In this mode you can place nodes with
+                                the LEFT MOUSE BUTTON.
+                                The RIGHT MOUSE BUTTON is for moving all components.
+
+        "Add Edge"  -   good for drawing edges by clicking with the LMB.
+                        When clicking again on a corresponding component, the edge
+                        will be drawn. Otherwise no edge will be placed or, if
+                        clicking on the background, you can give the edge additional
+                        vertices.
+
+        "Add Token" -   LMB for adding tokens to a node.
+                        RMB for subtracting tokens from a node.
+
+        "Edit"      -   LMB opens the corresponding dialog for the selected component.
+                        Here you can enter names, conditions etc.
+
+        "Delete"    -   LMB deletes the selected component with all adjacent edges.
+
+        "Save"      -   Same as menu item "Save".
+
+        "Memorize"  -   Here you can memorize the current petri net. With the...
+
+        "Draw Memorized"    -   ...button you can draw the memorized petri net.
+
+        "Step"      -   Initiates the current running mode and makes the petri net
+                        going on.
+
+        "Single Step"       -   Same as Step, but invokes only one single step with
+                                each press.
+
+
+The status line informs you of your current actions, the current running mode
+and the current painting mode and the step count.
+
+
+Now feel free to try on your own....
+
+
+
+...but first the DISCLAIMER:
+
+You may may use this software for free. No payment will be required.
+If you want to copy this program to someone, do it! But if you do so, please
+don't rearrange or change the program package. Don't remove files nor make some
+additions. You may take the source code and make some improvements / additions
+for your own use, but don't distribute them without contacting us first.
+It is no good to have X versions of Y persons lying around the net.
+And after all, it is our program, don't you think?!
+
+If you want to complete your shareware collection cd-rom with this program,
+that is quite all right. But only with the restrictions above a for a price
+that is corresponding to your expanses, not for profit!
+
+If you have some extensions, additions or some good idea, please contact us,
+so we can see, what we can do.
+
+If you have found a bug, you may keep it and feed it.
+OK, quite a joke. If there is a real bug (and NOT a problem with some JDK versions),
+then you are of course encouraged to tell us about it. We don't promise anything,
+but there may be some way to eliminate it.
+
+
+
+ONE LAST THING:
+
+There are some things we couldn't get around to implementate them in the program
+that where in the C version:
+
+    One thing was the break conditions for transitions.
+    Second, the option "Stop after fire" isn't functionating yet.
+
+If there is a need for these funtions please contact us.
+
+The Load/Save-Routines should be able to read / write the PNS-Files of the old
+program. Especially loading shouldn't be a problem. Because of the different
+architecture of the two programs and the enormous possibilities of petri nets,
+we can not garantee for a 100% compatibility.
+
+If you experience problems with the dialogs not coming up, especially on
+Solaris computers in cooperation with X-Terminals, sorry, that seems to be a
+problem of Java and its implementation with Motif (or so we think). If someone
+has some better explication, please tell us.
+
+
+
+TESTING:
+
+... was done with JDK 1.0 on the following systems
+
+    Windows 95
+    Windows NT 4.0
+    OS/2 Warp 3.0 and 4.0
+    Solaris
+
+
+
+CONTACTING:
+
+    Achim Haessler
+    email: amhaessl@tick.informatik.uni-stuttgart.de
+
+    Martin Kada
+    email: mnkada@tick.informatik.uni-stuttgart.de
+
+    Joerg Walz
+    email: jgwalz@tick.informatik.uni-stuttgart.de
+
+    Supervisor Thomas Br<84>unl
+    WWW: http://www.informatik.uni-stuttgart.de/ipvr/bv/braunl
+    email: braunl@informatik.uni-stuttgart.de
+    Actual: WWW: http://www.ee.uwa.edu.au/~braunl
+            email: braunl@ee.uwa.edu.au
+

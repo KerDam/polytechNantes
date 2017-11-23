@@ -1,0 +1,56 @@
+import java.awt.*;
+import java.util.*;
+import java.lang.*;
+
+public class edge implements Cloneable {
+
+    public static final int NOTHING;
+    public static final int TRANSITION;
+    public static final int NODE;
+
+    public edge(int tFrom, int iFrom, int tTo, int iTo, Polygon points)
+
+    public boolean isNegated()
+    public void setNegated(boolean n)
+
+    public int getWeight()
+    public void setWeight(int weight)
+
+    public int getTFrom()
+    public void setTFrom(int tFrom)
+    public int getTTo()
+    public void setTTo(int tTo)
+    public int getIFrom()
+    public void setIFrom(int iFrom)
+    public int getITo()
+    public void setITo(int iTo)
+
+    public Color getColor()
+    public void setColor(Color color)
+
+    public Polygon getPoints()
+    public void setPoints(Polygon p)
+    public int getNumberOfPoints()
+    public Point getPoint(int i)
+
+    public Point getWeightPosition(pn PN)
+
+    public boolean pointingTo(pn p, transition t)
+
+    public void setLastPoint(int x, int y)
+    public void clearAllPoints()
+    public void clearLastPoint()
+    public void addPoint(int x, int y)
+
+    public double distance (double px, double py, pn PN)
+
+    public Point getXYFrom(pn PN)
+    public Point getXYFrom(pn PN, double distance)
+    public Point getXYTo(pn PN)
+    public Point getXYTo(pn PN, double distance)
+
+    public boolean adjust(pn PN, int index, int type)
+
+    public synchronized Object clone()
+
+}

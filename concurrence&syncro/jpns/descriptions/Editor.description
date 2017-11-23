@@ -1,0 +1,50 @@
+import java.awt.*;
+import java.io.*;
+import java.net.*;
+
+public class Editor extends Frame {
+
+   public Editor(String title, URL DocBase)
+
+   public void setAlreadySaved(boolean value)
+   public void setCount(int c)
+
+   public void runIsHolding()
+
+   public int getDelay()
+   public void setDelay(int d)
+   public void setDemo(boolean d)
+   public boolean getDemo()
+   public void setStatus(String s)
+
+   public runPN getRunStep()
+
+   public void paint(Graphics g)
+
+   public boolean mouseDown(Event event, int x, int y)
+   public boolean handleEvent(Event event)
+
+}
+
+
+class OverwriteDialog extends Dialog {
+
+    public OverwriteDialog(Frame par, String title, SavePetriNet s, pn PN)
+
+    public boolean action(Event e, Object arg)
+
+    public boolean getDecision()
+
+}
+
+
+class SorryDialog extends Dialog {
+
+    public SorryDialog(Frame parent)
+
+    public boolean action(Event e, Object arg)
+
+}
+
+
+

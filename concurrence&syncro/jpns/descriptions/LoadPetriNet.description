@@ -1,0 +1,16 @@
+import java.io.*;
+import java.awt.*;
+
+public class LoadPetriNet {
+
+    public LoadPetriNet()
+
+    public boolean setFile(String file) throws IOException
+    public void closeFile() throws IOException
+
+    public pn loadNewNet()
+    public void loadNet(pn PetNet)
+
+}
+
+

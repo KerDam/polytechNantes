@@ -1,0 +1,18 @@
+import java.awt.*;
+
+public class CPictButton extends Canvas {
+
+    public CPictButton(Image up, Image down, Image disabled)
+
+    public void SetState(int state)
+    public boolean isEnabled()
+    public synchronized void enable()
+    public synchronized void disable()
+
+    public boolean mouseUp(Event event, int x, int y)
+    public boolean mouseDown(Event event, int x, int y)
+
+    public void paint(Graphics g)
+    public void update(Graphics g)
+
+}
